@@ -1,12 +1,16 @@
 # Local .terraform directories
 **/.terraform/*
-
-# .tfstate files
+peering/**/.terraform/*
+peering-variables/**/.terraform/*
+ 
+# tfstate files
 *.tfstate
 *.tfstate.*
 
 # Crash log files
 crash.log
+peering/crash.log
+peering-variables/crash.log
 
 # Ignore any .tfvars files that are generated automatically for each Terraform run. Most
 # .tfvars files are managed as part of configuration and so should be included in
@@ -20,7 +24,14 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
-
+peering/override.tf
+peering/override.tf.json
+peering/*_override.tf
+peering/*_override.tf.json
+peering-variables/override.tf
+peering-variables/override.tf.json
+peering-variables/*_override.tf
+peering-variables/*_override.tf.json
 # Include override files you do wish to add to version control using negated pattern
 #
 # !example_override.tf
